@@ -1,0 +1,25 @@
+{
+  "name": "repodify-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for managing Repodify feeds",
+  "main": "dist/index.js",
+  "bin": {
+    "repodify": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "configstore": "^5.0.1",
+    "node-fetch": "^2.6.12"
+  },
+  "devDependencies": {
+    "@types/configstore": "^6.0.2",
+    "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.4",
+    "typescript": "^5.0.0"
+  }
+}
